@@ -1,4 +1,4 @@
 # COP
 Блок-схема функции, выполняющей вычисления
 
-![block-schema](https://imgur.com/a/zQb00Pl "func1")
+![block-schema](https://i.imgur.com/XuW98Mt.png "func1")
