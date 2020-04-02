@@ -3,6 +3,7 @@ import java.util.*;
 
 public class Main {
     private static final Scanner scanner = new Scanner(System.in);
+
     /*
     Дано: n - количество чисел в массиве
     *ar - массив чисел
@@ -20,8 +21,8 @@ public class Main {
      */
     static void func1(int[] arr) {
         int len = arr.length;
-        float pos = 0,neg = 0 ,zero = 0 ;
-        for (int i= 0; i<len; i++) {
+        float pos = 0, neg = 0, zero = 0;
+        for (int i = 0; i < len; i++) {
             if (arr[i] > 0) {
                 pos++;
             } else if (arr[i] < 0) {
@@ -30,9 +31,9 @@ public class Main {
                 zero++;
             }
         }
-        System.out.println(pos/len);
-        System.out.println(neg/len);
-        System.out.println(zero/len);
+        System.out.println(pos / len);
+        System.out.println(neg / len);
+        System.out.println(zero / len);
     }
 
     public static void main(String[] args) {
@@ -45,16 +46,10 @@ public class Main {
         String[] arrItems = scanner.nextLine().split(" ");
         System.out.println("Press Enter");
         scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
-        for (int i = 0; i < n; i++) {
-            int arrItem = Integer.parseInt(arrItems[i]);
-            arr[i] = arrItem;
-        }
-
-        func1(arr);
-
         scanner.close();
+        Solution solution = new Solution();
+        solution.setData(arrItems);
+        solution.answer();
+
     }
-
-
-
 }
