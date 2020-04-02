@@ -19,23 +19,7 @@ public class Main {
     *0.333333
     *0.166667
      */
-    static void func1(int[] arr) {
-        int len = arr.length;
-        float pos = 0, neg = 0, zero = 0;
-        for (int i = 0; i < len; i++) {
-            if (arr[i] > 0) {
-                pos++;
-            } else if (arr[i] < 0) {
-                neg++;
-            } else {
-                zero++;
-            }
-        }
-        System.out.println(pos / len);
-        System.out.println(neg / len);
-        System.out.println(zero / len);
-    }
-
+    
     public static void main(String[] args) {
         System.out.println("Enter kol-vo n:");
         int n = scanner.nextInt();
